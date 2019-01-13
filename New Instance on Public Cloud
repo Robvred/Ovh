@@ -1,13 +1,13 @@
 #!/bin/bash
 # Configuration d'un serveur Public-Cloud
 #
-# Install EPEL Release
-echo "Install epel-release"
+# Install base
+echo "Install Base"
 yum install epel-release -y
+yum install -y net-tools
 # Update Centos
 echo "Update"
 yum update -y
-echo "Install Base"
 yum install wget -y
 yum install nano -y
 # Configuration IP Eth0:0
